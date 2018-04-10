@@ -162,12 +162,18 @@ nombre, o sigui, sense "zeros a l'esquerra". */
         char arrayssuma[] = new char[4];
         resultado = Integer.toString(suma);
         // el resultado como cadena String, es transmitido al char array
-        int i=0;
-        for (i=-1, i<3, i++)
-        {
-        arrayssuma[]=resultado.charAt(i);
+        int i = 0;
+        for (i = 0; i < 4; i++) {
+            arrayssuma[i] = resultado.charAt(i);
 
-    }
+        }
+        // finalmente imprimimos el char array para comprobar que todo ha ido bien.
+        // terminado en Ramon Muntaner.
+
+        for (i = 0; i < 4; i++) {
+            System.out.println(arrayssuma[i]);
+        }
+
     }
 
     /*7.- Donats 2 arrays que tenen una sèrie de nombres enters ordenats ascendentment, crear un
@@ -211,7 +217,7 @@ mètode que ens torni un array amb la fusió ordenada dels dos anteriors.*/
         // anysbisiestos();
         // fromRomatoDecimal("XXVI");
         // matriz();
-        // deStringaEntero();
+        deStringaEntero();
         //  arraysAscendentes();
     }
 
