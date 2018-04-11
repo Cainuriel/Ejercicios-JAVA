@@ -251,14 +251,24 @@ Para buscar el anterior al mayor, vuelves a realizar
         // matriz();
         // deStringaEntero();
         //  arraysAscendentes();
-        int [][] matriz={{1,2,3,4},{5,6},{7,8,9,10,11,12},{13}};
+        
+        int  matriz[][]={{1,2,3,4,},
+                         {5,6,},
+                         {7,8,9,10,11,12},
+                         {13}};
         int filas=0;
-        int[] columnas =new int[50];
+        int[] columnas =new int[4];
         int i=0;
         filas=matriz.length;
-       /* for (i=0; i<filas; i++) {
-            columnas[i]=matriz[i].length;*/
-            System.out.println("Columna "+2+""+matriz[2].length);
+   
+        for (int[]fila: matriz ) {
+            System.out.println();
+                for (int z: fila){
+                    System.out.println(z+"");
+                }
+        }
+       
+            System.out.println("Columna "+2+""+matriz[0].length);
         
        /* int numcolumnas=columnas.length;
         int j=-1;
