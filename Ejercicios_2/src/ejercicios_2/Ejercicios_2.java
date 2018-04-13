@@ -1,5 +1,6 @@
 package ejercicios_2;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -100,22 +101,23 @@ Escriviu quatre mètodes per localitzar els cantons superior, inferior, esquerra
     // @return valor mínim de y on algun puntés TRUE
     // esquina superior izquierda
     public static String getCantoSuperior(boolean[][] matriz) {
-        
-        int filas=0;
-        int[] columnas =new int[50];
-        int i=0;
-        filas=matriz.length;
-        for (i=0; i<filas; i++) {
-            columnas[i]=matriz[i].length;
+
+        int filas = 0;
+        int[] columnas = new int[50];
+        int i = 0;
+        filas = matriz.length;
+        for (i = 0; i < filas; i++) {
+            columnas[i] = matriz[i].length;
         }
-        int numcolumnas=columnas.length;
-        int j=-1;
-        do {        j++;
-        System.out.println(columnas[j]); }
-        while (j<numcolumnas);
-        
+        int numcolumnas = columnas.length;
+        int j = -1;
+        do {
+            j++;
+            System.out.println(columnas[j]);
+        } while (j < numcolumnas);
+
         System.out.println("Cantidad de filas de la matriz: " + matriz.length);
-      //  System.out.println("Cantidad de elementos de la primera fila: " + matriz[0].length);
+        //  System.out.println("Cantidad de elementos de la primera fila: " + matriz[0].length);
         return "";
     }
 
@@ -201,15 +203,14 @@ nombre, o sigui, sense "zeros a l'esquerra". */
 
     /*7.- Donats 2 arrays que tenen una sèrie de nombres enters ordenats ascendentment, crear un
 mètode que ens torni un array amb la fusió ordenada dels dos anteriors.*/
-    
-    /*TEORIA Inicializas una variable que sea el mayor con -1. Después tomas el 6, 
+ /*TEORIA Inicializas una variable que sea el mayor con -1. Después tomas el 6, 
     ¿es mayor al antiguo mayor, que era -1? Como verdaderamente es mayor entonces 
     guardas en la variable mayor el 6. Después tomas el 5, ¿es mayor al antiguo mayor, 
     que era 6? Como no es mayor entonces no haces nada. Y así continuas buscando el mayor.
 
 Para buscar el anterior al mayor, vuelves a realizar 
     el proceso pero sin tomar en cuenta el mayor que ya habías encontrado. 
-   */
+     */
     public static void arraysAscendentes() {
 
         //creamos los arrays a ordenar 
@@ -252,32 +253,25 @@ Para buscar el anterior al mayor, vuelves a realizar
         // deStringaEntero();
         //  arraysAscendentes();
         
-        int  matriz[][]={{1,2,3,4,},
-                         {5,6,},
-                         {7,8,9,10,11,12},
-                         {13}};
-        int filas=0;
-        int[] columnas =new int[4];
-        int i=0;
-        filas=matriz.length;
-   
-        for (int[]fila: matriz ) {
-            System.out.println();
-                for (int z: fila){
-                    System.out.println(z+"");
-                }
-        }
-       
-            System.out.println("Columna "+2+""+matriz[0].length);
         
-       /* int numcolumnas=columnas.length;
-        int j=-1;
-        do {        j++;
-        System.out.println("columna nº"+j+""+columnas[j]); }
-        while (j<numcolumnas);*/
-        
-        System.out.println("Cantidad de filas de la matriz: " + matriz.length);
-        
-    }
+        // Solucionado el problema lógico
+        int[][] matriz = {{1, 2}, {14}, {3, 4, 9, 10, 11, 12, 13}, {5, 6, 7, 8}};
+        int filas = 0;
+        int[] columnas = new int[4];
+        int i = 0;
+        filas = matriz.length;
 
+        for (int[] fila : matriz) {
+            System.out.println(" Espacio de control ");
+            for (int z : fila) {
+                System.out.print(z + "");
+
+            }
+        }
+
+        System.out.println(" Columna " + "" + matriz[2].length);
+
+        System.out.println("Cantidad de filas de la matriz: " + matriz.length);
+
+    }
 }
