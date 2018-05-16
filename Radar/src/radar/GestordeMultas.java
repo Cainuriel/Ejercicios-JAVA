@@ -35,7 +35,7 @@ public class GestordeMultas {
     public void entradaAutopista(Radar reg) {
 
         if (tabla.size() == TAMANO) {
-            tabla.remove(0);
+            tabla.remove(this);
         }
         tabla.add(reg);
     }
@@ -44,12 +44,13 @@ public class GestordeMultas {
     public void salidaAutopista(Radar reg) {
 
         if (tabla.contains(reg)) {
-            distancia = salida.getKilometro() - entrada.getKilometro();
+            
+            distancia = salida.getKilometro - entrada.getKilometro();
             tiempo = salida.getHora() - entrada.getHora();
             velocidad = distancia / tiempo;
             if (velocidad > MAX_VEL) {
                 System.err.println("MULTA POR EXCESO DE VELOCIDAD\n"
-                        + "MATRICULA: " + entrada.getMatricula() + "\n"
+                        + "MATRICULA: " + entrada.getMatricula + "\n"
                         + "Velocidad: " + velocidad + "En Km: " + entrada.getKilometro() + "Hasta Km"
                         + salida.getKilometro() + "\n"
                         + "Entre las " + entrada.getHora() + " Horas, y las " + salida.getHora() + "Horas"+"\n"
