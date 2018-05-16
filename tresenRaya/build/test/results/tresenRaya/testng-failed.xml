@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [tresenRaya]">
+  <test name="JuegotresrayasTest(failed)" junit="true">
+    <classes>
+      <class name="JuegotresrayasTest">
+        <methods>
+          <include name="testesganador"/>
+        </methods>
+      </class> <!-- JuegotresrayasTest -->
+    </classes>
+  </test> <!-- JuegotresrayasTest(failed) -->
+</suite> <!-- Failed suite [tresenRaya] -->

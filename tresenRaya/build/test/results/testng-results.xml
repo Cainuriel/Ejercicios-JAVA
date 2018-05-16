@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="9" passed="9">
+  <reporter-output>
+  </reporter-output>
+  <suite name="tresenRaya" duration-ms="78" started-at="2018-05-16T14:18:56Z" finished-at="2018-05-16T14:18:56Z">
+    <groups>
+    </groups>
+    <test name="JuegotresrayasTest" duration-ms="78" started-at="2018-05-16T14:18:56Z" finished-at="2018-05-16T14:18:56Z">
+      <class name="JuegotresrayasTest">
+        <test-method status="PASS" signature="testcopiarmatrices()[pri:0, instance:testcopiarmatrices(JuegotresrayasTest)]" name="testcopiarmatrices" duration-ms="16" started-at="2018-05-16T16:18:56Z" finished-at="2018-05-16T16:18:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcopiarmatrices -->
+        <test-method status="PASS" signature="testhaydiagonales()[pri:0, instance:testhaydiagonales(JuegotresrayasTest)]" name="testhaydiagonales" duration-ms="0" started-at="2018-05-16T16:18:56Z" finished-at="2018-05-16T16:18:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testhaydiagonales -->
+        <test-method status="PASS" signature="testesganador()[pri:0, instance:testesganador(JuegotresrayasTest)]" name="testesganador" duration-ms="0" started-at="2018-05-16T16:18:56Z" finished-at="2018-05-16T16:18:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testesganador -->
+        <test-method status="PASS" signature="testdefensadiagonal()[pri:0, instance:testdefensadiagonal(JuegotresrayasTest)]" name="testdefensadiagonal" duration-ms="0" started-at="2018-05-16T16:18:56Z" finished-at="2018-05-16T16:18:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testdefensadiagonal -->
+        <test-method status="PASS" signature="testdefensasuperior()[pri:0, instance:testdefensasuperior(JuegotresrayasTest)]" name="testdefensasuperior" duration-ms="0" started-at="2018-05-16T16:18:56Z" finished-at="2018-05-16T16:18:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testdefensasuperior -->
+        <test-method status="PASS" signature="testhayfilas()[pri:0, instance:testhayfilas(JuegotresrayasTest)]" name="testhayfilas" duration-ms="0" started-at="2018-05-16T16:18:56Z" finished-at="2018-05-16T16:18:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testhayfilas -->
+        <test-method status="PASS" signature="testdefensainferior()[pri:0, instance:testdefensainferior(JuegotresrayasTest)]" name="testdefensainferior" duration-ms="0" started-at="2018-05-16T16:18:56Z" finished-at="2018-05-16T16:18:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testdefensainferior -->
+        <test-method status="PASS" signature="testhaycolumnas()[pri:0, instance:testhaycolumnas(JuegotresrayasTest)]" name="testhaycolumnas" duration-ms="0" started-at="2018-05-16T16:18:56Z" finished-at="2018-05-16T16:18:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testhaycolumnas -->
+        <test-method status="PASS" signature="testcolocarficha()[pri:0, instance:testcolocarficha(JuegotresrayasTest)]" name="testcolocarficha" duration-ms="0" started-at="2018-05-16T16:18:56Z" finished-at="2018-05-16T16:18:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcolocarficha -->
+      </class> <!-- JuegotresrayasTest -->
+    </test> <!-- JuegotresrayasTest -->
+  </suite> <!-- tresenRaya -->
+</testng-results>
