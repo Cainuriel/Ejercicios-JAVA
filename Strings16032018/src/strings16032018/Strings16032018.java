@@ -34,13 +34,11 @@ public class Strings16032018 {
 
     public static void buscarletras2(String dosletras) {
 
-        String frase = "aacccabcasdasdsaa";
-
-        int tamano = frase.length();
+        String frase = "ab unad del ab aunad ab abc";
         int contador = 0;
 
         // el tamaño es menos uno para que pueda pararse el bucle
-        for (int indice = 0; indice < tamano - 1; indice++) {
+        for (int indice = 0; indice < frase.length() - 1; indice++) {
             if (frase.charAt(indice) == dosletras.charAt(0)) {
                 if (frase.charAt(indice + 1) == dosletras.charAt(1)) {
                     contador++;
