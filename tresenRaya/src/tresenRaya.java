@@ -1,5 +1,6 @@
 
 import java.util.Arrays;
+import java.util.Objects;
 import javax.swing.JOptionPane;
 import javax.swing.JTable;
 
@@ -18,6 +19,7 @@ public class tresenRaya extends javax.swing.JFrame {
     int x = 0;
     int y = 0;
     int turno = 0;
+    int jugador = 0;
 
     public void setTurno(int turno) {
         this.turno = turno;
@@ -50,20 +52,20 @@ public class tresenRaya extends javax.swing.JFrame {
         int[] posicion = new int[2];
         int x = 0;
         int y = 0;
-        
+
         x = tabla.getSelectedRow();
         y = tabla.getSelectedColumn();
         tabla.setValueAt("X", x, y);
         matriz[x][y] = "X";
         turno++;
-        
-        matriz2=Juegotresrayas.copiarmatriz(matriz);
+
+        matriz2 = Juegotresrayas.copiarmatriz(matriz);
         partida.defensa(matriz);
-        if (matriz2==matriz) {
+        if (matriz2 == matriz) {
             posicion = partida.colocarficha(matriz);
-        tabla.setValueAt("O", posicion[0], posicion[1]);
+            tabla.setValueAt("O", posicion[0], posicion[1]);
         }
-        Juegotresrayas.imprimirmatriz(matriz);
+
         turno++;
         if (partida.quienGana(matriz)) {
             mensajes.setText("Demostrada mi superioridad: GANÉ");
@@ -85,7 +87,6 @@ public class tresenRaya extends javax.swing.JFrame {
             }
 
         }
-        
 
     }
 
@@ -97,8 +98,28 @@ public class tresenRaya extends javax.swing.JFrame {
                 tabla.setValueAt("", i, j);
 
             }
+
+            matriz = partida.inicializar();
+
         }
-        matriz = partida.inicializar();
+
+    }
+
+    public boolean tablas(String matriz[][]) {
+        String espacio = "";
+        int contador = 0;
+          for (int x = 0; x < matriz.length; x++) {
+            for (int y = 0; y < matriz[x].length; y++) {
+                if (Objects.equals(matriz[x][y], espacio)) {
+                    contador = 1;
+                }
+            }
+        }
+        if (contador == 0) {
+            return true;
+        }
+        return false;
+
     }
 
     /**
@@ -128,7 +149,15 @@ public class tresenRaya extends javax.swing.JFrame {
             new String [] {
                 "Title 1", "Title 2", "Title 3"
             }
-        ));
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
         tabla.setRowHeight(90);
         tabla.setRowMargin(5);
         tabla.setTableHeader(null);
@@ -198,24 +227,37 @@ public class tresenRaya extends javax.swing.JFrame {
 
         mensajes.setText("JUGADOR 2");
 
-        if (turno % 2 == 0) {
+        if (jugador == 0) {
 
             x = tabla.getSelectedRow();
             y = tabla.getSelectedColumn();
-            tabla.setValueAt("   X", x, y);
-            matriz[x][y] = "X";
-            turno++;
-         
+
+            if (matriz[x][y] == "") {
+                tabla.setValueAt("   X", x, y);
+                matriz[x][y] = "X";
+
+                jugador = 1;
+            }
+
+            Juegotresrayas.imprimirmatriz(matriz);
+
         } else {
+
             mensajes.setText("JUGADOR 1");
             x = tabla.getSelectedRow();
             y = tabla.getSelectedColumn();
-            tabla.setValueAt("   O", x, y);
-            matriz[x][y] = "O";
-            turno++;
-            
+
+            if (matriz[x][y] == "") {
+                tabla.setValueAt("   O", x, y);
+                matriz[x][y] = "O";
+
+                jugador = 0;
+            }
+
+            Juegotresrayas.imprimirmatriz(matriz);
 
         }
+
         if (partida.quienGana(matriz)) {
             mensajes.setText("FELICIDADES, HAS GANADO");
             int respuesta = JOptionPane.showConfirmDialog(null, "¿Revancha?", "GAME OVER", 2);
@@ -226,7 +268,7 @@ public class tresenRaya extends javax.swing.JFrame {
             }
         }
 
-        if (turno == 9) {
+        if (tablas(matriz)) {
             mensajes.setText("TABLAS");
             int respuesta = JOptionPane.showConfirmDialog(null, "¿Revancha?", "GAME OVER", 2);
             if (respuesta == 0) {

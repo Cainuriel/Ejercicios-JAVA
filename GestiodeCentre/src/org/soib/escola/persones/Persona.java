@@ -55,8 +55,8 @@ java.util.Date.*/
     public  String toString (Persona persona)  {
  
         
-        return "Persona: ( "+ " Nombre: "+persona.getNom()+" Apellidos: "+
-                persona.getApellidos()+ " Fecha de nacimiento: "+persona.getFechanacer()+")";
+        return "Persona: ( "+ "Nombre: "+persona.getNom()+"Apellidos: "+
+                persona.getApellidos()+ "Fecha de nacimiento: "+persona.getFechanacer()+")";
         
                 }
     

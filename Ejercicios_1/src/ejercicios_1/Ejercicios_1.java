@@ -528,7 +528,7 @@ la quantitat sobrant.*/
         //imprimirMatriz(matriz);
         //  primerdibujo(matriz);
         // arboldenavidad(matriz);
-       // rombo1(matriz);
+        rombo1(matriz);
         //rombo2(matriz);
         // imprimirMatriz(matriz);
         //  ambstrong(154);

@@ -35,9 +35,9 @@ public class Profesor extends Persona {
 
     public String toString(Profesor profesor) {
 
-        return "Persona: ( " + "Nombre: " + profesor.getNom() + " Apellidos: "
-                + profesor.getApellidos() + " Fecha de nacimiento: " + profesor.getFechanacer() +
-                " Su especialidad es: "+ profesor.getEspecialidad();
+        return "Persona: ( " + "Nombre: " + profesor.getNom() + "Apellidos: "
+                + profesor.getApellidos() + "Fecha de nacimiento: " + profesor.getFechanacer() +
+                "Su especialidad es: "+ profesor.getEspecialidad();
     }
 
 }

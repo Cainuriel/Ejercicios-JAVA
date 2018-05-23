@@ -31,9 +31,9 @@ public class GestiodeCentre {
         Alumnos.add(new Alumno("Francisco","Hernández","24-12-1975","Informática"));
         Alumnos.add(new Alumno("Renancia","Hortega","05/08/1985", "Informática"));
         Alumnos.add(new Alumno("Sebastian","Marin","06/10/1980", "Informática"));
-     Profesores.add(0, new Profesor("Guillem","Salom","23/04/1970","Informática"));
-      Profesores.add(1, new Profesor("Maciá","Mut","16/11/1975","Informática"));
-       Profesores.add(new Profesor("David","Gelpi","09/04/1978","Informática"));
+//        Profesores.add(0, prof1);
+//        Profesores.add(1, prof2);
+//        Profesores.add(prof3);
 
     }
     
@@ -45,11 +45,11 @@ public class GestiodeCentre {
     public void mostrarDades() {
         
         for (Profesor e: Profesores){
-            System.out.println(e.toString(e));
+            System.out.print(e);
             
         }
          for (Alumno e: Alumnos){
-            System.out.println(e.toString(e)); }
+            System.out.print(e); }
         
         
         
