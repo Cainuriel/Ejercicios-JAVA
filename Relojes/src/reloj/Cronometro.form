@@ -90,10 +90,18 @@
                               </Group>
                           </Group>
                       </Group>
+<<<<<<< Updated upstream
                   </Group>
                   <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="mensaje" min="-2" pref="249" max="-2" attributes="0"/>
+=======
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="mensaje" max="32767" attributes="0"/>
+>>>>>>> Stashed changes
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
@@ -229,7 +237,11 @@
     </Component>
     <Component class="javax.swing.JLabel" name="mensaje">
       <Properties>
+<<<<<<< Updated upstream
         <Property name="text" type="java.lang.String" value="vuelva a tocar si desea anotar un tiempo"/>
+=======
+        <Property name="text" type="java.lang.String" value="vuelva a tocar &quot;Running&quot;,  si desea anotar un tiempo"/>
+>>>>>>> Stashed changes
         <Property name="verticalAlignment" type="int" value="1"/>
         <Property name="debugGraphicsOptions" type="int" value="-1"/>
         <Property name="verticalTextPosition" type="int" value="1"/>
