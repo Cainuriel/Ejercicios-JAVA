@@ -206,11 +206,7 @@ public class Cronometro extends javax.swing.JFrame {
             }
         });
 
-<<<<<<< Updated upstream
-        mensaje.setText("vuelva a tocar si desea anotar un tiempo");
-=======
         mensaje.setText("vuelva a tocar \"Running\",  si desea anotar un tiempo");
->>>>>>> Stashed changes
         mensaje.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         mensaje.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
         mensaje.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
@@ -268,18 +264,11 @@ public class Cronometro extends javax.swing.JFrame {
                                 .addComponent(Buttoncountdown)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(Buttonreiniciar)
-<<<<<<< Updated upstream
-                                    .addComponent(Spinnercentesimas, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(mensaje, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)))
-=======
                                     .addComponent(Spinnercentesimas, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(mensaje, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
->>>>>>> Stashed changes
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -329,11 +318,7 @@ public class Cronometro extends javax.swing.JFrame {
 
                 public void actionPerformed(ActionEvent e) {
 
-<<<<<<< Updated upstream
-                    jLabelcronocentesimas.setText(String.valueOf("0" + centesimas));
-=======
                     jLabelcronocentesimas.setText(String.valueOf(centesimas+"0"));
->>>>>>> Stashed changes
                     centesimas++;
 
                     if (centesimas == 9) {
@@ -391,11 +376,7 @@ public class Cronometro extends javax.swing.JFrame {
             jLabelcronosegundos.setText(String.valueOf(numeros[segundos]));
             jLabelcronominutos.setText("0" + String.valueOf(minutos));
             JOptionPane.showMessageDialog(null, "0" + minutos + ":"
-<<<<<<< Updated upstream
-                    + numeros[segundos] + ":0" + centesimas, "Anote la Marca", 2, iconlopez);
-=======
                     + numeros[segundos] + ":" + centesimas+"0", "Anote la Marca", 2, iconlopez);
->>>>>>> Stashed changes
 
         } else {
             segundero.start();

@@ -45,7 +45,7 @@ public class Usuaris extends javax.swing.JFrame {
 
     public void consultarUsuaris() {
 
-        String[] titols = {"NIF", "NOM", "LLINATGE1", "LLINATGE2"};
+        String[] titols = {"NIF", "NOMBRE", "1º APELLIDO", "2º APELLIDO"};
         modelo = new DefaultTableModel(null, titols);
         ConexionMySQL mysql = new ConexionMySQL();
         Connection cn = mysql.conectar();

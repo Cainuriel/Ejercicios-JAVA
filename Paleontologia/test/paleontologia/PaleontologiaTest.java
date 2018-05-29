@@ -42,7 +42,7 @@ public class PaleontologiaTest {
         Paleontologia prueba4 = new Paleontologia();
         Paleontologia prueba8 = new Paleontologia();
         String velociraptor = "...vvvvv...";
-        String desconocido = "...vvCvv...";
+        String desconocido = "|||vvCvv...";
         Paleontologia prueba9 = new Paleontologia();
        assertEquals("A T-Rex is eating a dead dino.", "A T-Rex is eating a dead dino.", prueba5.lunchTime(T_Rex));
         assertEquals("A brachiosaurus is eating flowers.", "A brachiosaurus is eating flowers.", prueba6.lunchTime(brachiosaurus));

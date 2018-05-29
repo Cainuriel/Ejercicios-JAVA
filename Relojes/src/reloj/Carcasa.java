@@ -329,12 +329,6 @@ public class Carcasa extends javax.swing.JFrame {
                 setminuto(calendario.get(Calendar.MINUTE));
                 // minutos = calendario.get(Calendar.MINUTE);
                 segundos = calendario.get(Calendar.SECOND);
-<<<<<<< Updated upstream
-
-                insertaHora.setText(gethora() + ":" + getminuto() + ":" + segundos);
-                barraHoras.setValue(gethora());
-                barraMinutos.setValue(getminuto());
-=======
                 if (segundos<10){
                     insertaHora.setText(gethora() + ":" + getminuto() + ":0" + segundos);
                     barraHoras.setValue(gethora());
@@ -344,7 +338,6 @@ public class Carcasa extends javax.swing.JFrame {
                 insertaHora.setText(gethora() + ":" + getminuto() + ":" + segundos);
                 barraHoras.setValue(gethora());
                 barraMinutos.setValue(getminuto());}
->>>>>>> Stashed changes
                 barraSegundos.setValue(segundos);
                 if (gethora()==datohora && getminuto()==datominuto) {
                     JOptionPane.showMessageDialog(null, "La alarma está sonando");
