@@ -88,7 +88,11 @@
                   </Group>
               </Group>
               <Component id="jScrollPane1" min="-2" pref="452" max="-2" attributes="0"/>
+<<<<<<< HEAD
               <EmptySpace max="32767" attributes="0"/>
+=======
+              <EmptySpace pref="12" max="32767" attributes="0"/>
+>>>>>>> mejoras
           </Group>
       </Group>
     </DimensionLayout>

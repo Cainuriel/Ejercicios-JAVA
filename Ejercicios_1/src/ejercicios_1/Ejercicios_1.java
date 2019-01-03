@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> mejoras
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -13,6 +16,7 @@ package ejercicios_1;
 public class Ejercicios_1 {
 
     //1.- Realitza un programa que donades dues variables int a i b, intercanviïn els seus valors.
+<<<<<<< HEAD
     public static void cambiarValores(int[] a, int[] b) {
 
         int traslado = b[0];
@@ -20,6 +24,14 @@ public class Ejercicios_1 {
         a[0] = traslado;
 
         System.out.println("El valor a, vale ahora: " + a[0] + " y el valor b vale ahora: " + b[0]);
+=======
+    public static String cambiarValores(int a, int b) {
+
+        int atob = b;
+        int btoa = a;
+
+        return "El valor a, vale ahora: " + atob + " y el valor b vale ahora: " + btoa;
+>>>>>>> mejoras
     }
 
     //2.- Realitza un programa que calculi l'àrea d’un quadrat donat un costat.
@@ -62,7 +74,11 @@ consonants.*/
                 }
             }
             // Si no lo es, se imprime consonante.
+<<<<<<< HEAD
             if (!control) {
+=======
+            if (control == false) {
+>>>>>>> mejoras
                 System.out.println(" Consonante");
             }
 
@@ -121,7 +137,11 @@ la quantitat sobrant.*/
             } else {
                 i++;
             }
+<<<<<<< HEAD
         } while (dinero >= 5);
+=======
+        } while (dinero > 5);
+>>>>>>> mejoras
 
         System.out.println("Estos son sus billetes:");
 
@@ -141,6 +161,7 @@ la quantitat sobrant.*/
      */
     public static void transformarbucle() {
         int i = 0;
+<<<<<<< HEAD
         while (i < 5) {
             System.out.println("Imprimiendo en un bucle WHILE.\n"
                     + "VEZ: " + (i + 1));
@@ -155,6 +176,15 @@ la quantitat sobrant.*/
 //        } while (i < 5);
 //        System.out.println("Imitacion del bucle: for (i=0; i<5; i++),"
 //                + "Finalizado ");
+=======
+        do {
+            System.out.println("Imprimiendo en un bucle WHILE.\n"
+                    + "VEZ: " + (i + 1));
+            i++;
+        } while (i != 5);
+        System.out.println("Imitacion del bucle: for (i=0; i<5; i++),"
+                + "Finalizado ");
+>>>>>>> mejoras
 
     }
 
@@ -163,23 +193,39 @@ la quantitat sobrant.*/
      * del pdf.
      */
     public static void primerdibujo(String[][] matriz) {
+<<<<<<< HEAD
 
         String asteriscos[] = {"*", "***", "*****", "*******", "*********"};
+=======
+        int z = 7;
+        String asterisco = "*";
+>>>>>>> mejoras
 
         for (int i = 0; i < 9; i++) {
 
             for (int j = 6; j == 6; j--) {
 
+<<<<<<< HEAD
                 matriz[i][j] = asteriscos[i];;
 
             }
         }
         imprimirMatriz(matriz);
+=======
+                matriz[i][j] = asterisco;
+
+                System.out.println(matriz[i][j]);
+                asterisco = asterisco + "*";
+
+            }
+        }
+>>>>>>> mejoras
 
     }
 
     public static void arboldenavidad(String[][] matriz) {
 
+<<<<<<< HEAD
         for (int i = 0; i < matriz.length; i++) {
 
             if (i < 5) {
@@ -196,11 +242,27 @@ la quantitat sobrant.*/
         matriz[6][6] = "|";
 
         imprimirMatriz(matriz);
+=======
+        int j = 6;
+        matriz[0][6] = "     *     ";
+        matriz[1][5] = "    ***    ";
+        matriz[2][4] = "   *****   ";
+        matriz[3][3] = "  *******  ";
+        matriz[4][2] = " ********* ";
+        matriz[5][1] = "    ||     ";
+
+        for (int i = 0; i < 6; i++) {
+
+            System.out.println(matriz[i][j]);
+            j--;
+        }
+>>>>>>> mejoras
 
     }
 
     public static void rombo2(String[][] matriz) {
 
+<<<<<<< HEAD
         for (int i = 0; i < matriz.length; i++) {
 
             if (i <= 2) {
@@ -256,6 +318,42 @@ la quantitat sobrant.*/
     }
 
 
+=======
+        int j = 6;
+        matriz[0][6] = "     *     ";
+        matriz[1][5] = "    * *    ";
+        matriz[2][4] = "   *   *   ";
+        matriz[3][3] = "    * *    ";
+        matriz[4][2] = "     *     ";
+        matriz[5][1] = "           ";
+
+        for (int i = 0; i < 6; i++) {
+
+            System.out.println(matriz[i][j]);
+            j--;
+        }
+
+    }
+
+    public static void rombo1(String[][] matriz) {
+
+        int j = 6;
+        matriz[0][6] = "     *     ";
+        matriz[1][5] = "    ***    ";
+        matriz[2][4] = "   *****   ";
+        matriz[3][3] = "    ***    ";
+        matriz[4][2] = "     *     ";
+        matriz[5][1] = "           ";
+
+        for (int i = 0; i < 6; i++) {
+
+            System.out.println(matriz[i][j]);
+            j--;
+        }
+
+    }
+
+>>>>>>> mejoras
     /*
      9.- Realitza un programa que donat un nombre de tres cifres, digui si és
      * un nombre Armstrong. 153 = 13+ 53+ 33 */
@@ -263,7 +361,11 @@ la quantitat sobrant.*/
         String stringnumero = Integer.toString(numero);
         int suma = 0;
         int resultado;
+<<<<<<< HEAD
         // Comprobamos el tamaño del columna
+=======
+        // Comprobamos el tamaño del numero
+>>>>>>> mejoras
         int tamano = stringnumero.length();
 
         int cifras[] = new int[tamano];
@@ -274,7 +376,11 @@ la quantitat sobrant.*/
             cifras[i] = Character.getNumericValue(numeros[i]);
 
         }
+<<<<<<< HEAD
         //Finalmente comprobamos si es un columna amstrong
+=======
+        //Finalmente comprobamos si es un numero amstrong
+>>>>>>> mejoras
         for (int c : cifras) {
 
             suma += (int) Math.pow((double) c, (double) tamano);
@@ -330,9 +436,17 @@ la quantitat sobrant.*/
      * 10 = 10 */
     public static void tablasdemultiplicar() {
 
+<<<<<<< HEAD
         for (int multiplo = 1; multiplo < 11; multiplo++) {
             System.out.println("");
             for (int numero = 1; numero < 11; numero++) {
+=======
+        int numero;
+        int multiplo;
+        for (multiplo = 1; multiplo < 11; multiplo++) {
+            System.out.println("");
+            for (numero = 1; numero < 11; numero++) {
+>>>>>>> mejoras
 
                 System.out.println(multiplo + " X " + numero + " = " + multiplo * numero);
 
@@ -341,6 +455,7 @@ la quantitat sobrant.*/
         }
     }
 
+<<<<<<< HEAD
     public static void imprimirMatriz(String[][] matriz) {
 
         for (int fila = 0; fila < matriz.length; fila++) {
@@ -353,6 +468,8 @@ la quantitat sobrant.*/
         }
     }
 
+=======
+>>>>>>> mejoras
     /* 12.- Realitza un programa que mostri per pantalla els nombres del
      * 1 al 100 sense mostrar aquells que són múltiples de 5. */
     public static void noquieromultiplosdecinco() {
@@ -374,7 +491,11 @@ la quantitat sobrant.*/
     /* 13.- Realitza un
      * programa que mostri per pantalla els 50 primers nombres parells. */
     public static void primersnombresparells() {
+<<<<<<< HEAD
         for (int i = 2; i < 101; i++) {
+=======
+        for (int i = 2; i < 51; i++) {
+>>>>>>> mejoras
             System.out.print(i + " ");
             i++;
         }
@@ -443,7 +564,11 @@ la quantitat sobrant.*/
         for (int i = 0; i < tamano; i++) {
             numeros[i] = stringnumero.charAt(i);
             cifras[i] = Character.getNumericValue(numeros[i]);
+<<<<<<< HEAD
 
+=======
+                    
+>>>>>>> mejoras
         }
         for (int i = 1; i <= numero; i++) {
             if ((numero % i) == 0) {
@@ -456,6 +581,7 @@ la quantitat sobrant.*/
         } else {
             System.out.println("El numero no es primo");
         }
+<<<<<<< HEAD
 
         String numeroinvertido = "";
         for (int i = tamano - 1; i >= 0; i--) {
@@ -466,6 +592,19 @@ la quantitat sobrant.*/
         alreves = Integer.parseInt(numeroinvertido);
         control = 0;
 
+=======
+        
+        String numeroinvertido="";
+         for (int i = tamano-1; i >= 0; i--) {
+            numeroinvertido=numeroinvertido+numeros[i];
+             System.out.println(numeroinvertido);
+
+        }
+         int alreves;
+         alreves=Integer.parseInt(numeroinvertido);
+         control=0;
+         
+>>>>>>> mejoras
         for (int i = 1; i <= alreves; i++) {
             if ((numero % i) == 0) {
                 control++;
@@ -477,10 +616,20 @@ la quantitat sobrant.*/
         } else {
             System.out.println("El numero invertido, no es primo");
         }
+<<<<<<< HEAD
 
     }
 
     private static void Permutar(String[] elem, String act, int n, int r) {
+=======
+        
+        
+        
+    }
+
+
+private static void Permutar(String[] elem, String act, int n, int r) {
+>>>>>>> mejoras
         if (n == 0) {
             System.out.println(act);
         } else {
@@ -497,6 +646,7 @@ la quantitat sobrant.*/
      */
     public static void main(String[] args) {
         // TODO code application logic here
+<<<<<<< HEAD
         ///Ejercicio 1
         //  int a[]={12};
         //   int b[]={25};
@@ -504,11 +654,18 @@ la quantitat sobrant.*/
 
         // Ejercicio 2
         //areaCuadrado(5);
+=======
+        //Ejercicio 1
+        //System.out.println(cambiarValores(12, 25));
+        // Ejercicio 2
+        //areaCuadrado(251);
+>>>>>>> mejoras
         // Ejercicio 3
         //  calcularCirculo(12);
         // Ejercicio 4
         // VocaloConsonante();
         // Ejercicio 5
+<<<<<<< HEAD
         // calcularSegundos(125100);
         // Ejercicio 6
         //transformarbucle();
@@ -539,12 +696,57 @@ la quantitat sobrant.*/
         //numerosVampiros(2187);
         //  numerosprimos(456);
 
+=======
+        // calcularSegundos(345456);
+        // Ejercicio 6
+        //transformarbucle();
+        // Ejercicio 7
+        //calcularBilletes(11);
+
+        /* String[][] matriz = {{" ", " ", " ", " ", " ", " ", " ", " ", " ", " "},
+                             {" ", " ", " ", " ", " ", " ", " ", " ", " ", " "},
+                             {" ", " ", " ", " ", " ", " ", " ", " ", " ", " "},
+                             {" ", " ", " ", " ", " ", " ", " ", " ", " ", " "},
+                             {" ", " ", " ", " ", " ", " ", " ", " ", " ", " "},
+                             {" ", " ", " ", " ", " ", " ", " ", " ", " ", " "},
+                             {" ", " ", " ", " ", " ", " ", " ", " ", " ", " "},
+                             {" ", " ", " ", " ", " ", " ", " ", " ", " ", " "},
+                             {" ", " ", " ", " ", " ", " ", " ", " ", " ", " "},
+                             {" ", " ", " ", " ", " ", " ", " ", " ", " ", " "}};
+        // primerdibujo(matriz);
+       // arboldenavidad(matriz);
+       // rombo1(matriz);
+       // rombo2(matriz);*/
+        // ambstrong(4210818);
+        // espaciarDNI(43089193);
+        // tablasdemultiplicar();
+        //noquieromultiplosdecinco();
+        // primersnombresparells();
+        // numerosVampiros(2187);
+        numerosprimos(7951);
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+>>>>>>> mejoras
         /*String[] elementos = "1,2,3,4,5,6".split(",");
         int n = 4;                  //Tipos para escoger
         int r = elementos.length;   //Elementos elegidos
         Permutar(elementos, "", n, r);*/
+<<<<<<< HEAD
         
         
+=======
+>>>>>>> mejoras
     }
 
 }

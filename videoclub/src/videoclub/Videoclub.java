@@ -13,9 +13,22 @@ import java.util.ArrayList;
  */
 public class Videoclub {
     
+<<<<<<< HEAD
     ArrayList <Object> alquiler = new ArrayList <Object>();
     
     
+=======
+   
+    
+    
+    
+    
+    /*public void addArtículo(Object arg){
+        
+        
+   this.alquiler(arg);
+}*/
+>>>>>>> mejoras
         
 
 
@@ -24,6 +37,7 @@ public class Videoclub {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+<<<<<<< HEAD
         
         Serie S0001 =new Serie();
         Serie S0002 =new Serie("Con ocho basta", 6, "comedia", "Inglesa");
@@ -33,6 +47,29 @@ public class Videoclub {
         Videojuego V0002 =new Videojuego("Assasin Creed",150);
         Videojuego V0003 =new Videojuego("Metal Gear",300,"Konami","Acción/Sigilo");
         Videojuego V0004 =new Videojuego("FIFA18",600,"EASports","Deportes");
+=======
+         ArrayList <Object> alquiler = new ArrayList <Object>();
+         
+        Serie S0001 =new Serie();
+        alquiler.add(S0001);
+        Serie S0002 =new Serie("Con ocho basta", 6, "comedia", "Inglesa");
+        alquiler.add(S0002);
+        Serie S0003 =new Serie("Como conocí a vuestra madre","Comedia");
+        alquiler.add(S0003);
+        Serie  S0004 =new Serie("V",5,"Ciencia Ficción","Norteamericana");
+        alquiler.add(S0004);
+        Videojuego V0001 =new Videojuego();
+        alquiler.add(V0001);
+        Videojuego V0002 =new Videojuego("Assasin Creed",150);
+        alquiler.add(V0002);
+        Videojuego V0003 =new Videojuego("Metal Gear",300,"Konami","Acción/Sigilo");
+        alquiler.add(V0003);
+        Videojuego V0004 =new Videojuego("FIFA18",600,"EASports","Deportes");
+        alquiler.add(V0004);
+        
+        boolean entregado = V0004.isentregado();
+        System.out.println(entregado);
+>>>>>>> mejoras
         
     }
     

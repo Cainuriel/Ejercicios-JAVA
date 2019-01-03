@@ -171,10 +171,18 @@ public class Serie implements Entregable {
         }
         return "La serie " +a.getTitulo()  + " tiene más temporadas que"
                 + "la serie " + b.getTitulo();
+<<<<<<< HEAD
         
+=======
+       
+>>>>>>> mejoras
 
     }
 
 }
 
+<<<<<<< HEAD
 }
+=======
+
+>>>>>>> mejoras
